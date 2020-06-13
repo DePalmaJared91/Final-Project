@@ -1834,7 +1834,7 @@ Then run the `firebase init` command from your project’s root. You need to cho
     === Hosting Setup
 
     Your public directory is the folder (relative to your project directory) that
-    will contain Hosting assets to uploaded with firebase deploy. If you
+    will contain Hosting assets to published with firebase deploy. If you
     have a build process for your assets, use your build's output directory.
 
     ? What do you want to use as your public directory? build
@@ -1854,9 +1854,9 @@ Now, after you create a production build with `npm run build`, you can deploy it
 
     i  deploying database, hosting
     ✔  database: rules ready to deploy.
-    i  hosting: preparing build directory for upload...
-    Uploading: [==============================          ] 75%✔  hosting: build folder uploaded successfully
-    ✔  hosting: 8 files uploaded successfully
+    i  hosting: preparing build directory for publish...
+    publishing: [==============================          ] 75%✔  hosting: build folder published successfully
+    ✔  hosting: 8 files published successfully
     i  starting release process (may take several minutes)...
 
     ✔  Deploy complete!
