@@ -37,14 +37,45 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    color: #566271;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'St Ryde W03 Bold';
+    color: #566271;
 }
 
 .navbar {
     background-color: #F26A21 !important;
+    border-bottom: 3px solid #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-brand {
+    margin: 0;
+}
+
+.nav-link.active {
+    background-color: #C6D930 !important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+    outline: none;
 }
 
 .navbar img {
-    height: 30px;
+    height: 2rem;
+    margin: .75rem 1.25rem .75rem .75rem;
+}
+
+.navbar-logo-light {
     opacity: 20%;
 }
 
@@ -54,6 +85,43 @@ body {
 
 .btn {
     background-color: #566271;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show>.btn-secondary.dropdown-toggle {
+    background-color: #424b57;
+}
+
+.btn:active,
+.btn:focus,
+.form-control:active,
+.form-control:focus,
+.custom-file-input:active,
+.custom-file-input:focus {
+    border-color: rgba(86, 98, 113, .5);
+    box-shadow: 0 0 0 0.2rem rgba(130,138,145,.5);
+}
+
+.btn-dropdown {
+    background-color: #fff !important;
+    border:none;
+    color: #566271;
+    text-align: left;
+}
+
+.btn-dropdown:hover {
+    color: #566271;
+}
+
+.btn-dropdown:active,
+.btn-dropdown:focus {
+    color: #566271;
+    border-color: rgba(86, 98, 113, .5);
+    box-shadow: 0 0 0 0.2rem rgba(130,138,145,.5);
 }
 
 .jumbotron {
@@ -70,25 +138,18 @@ body {
     color: #566271;
     font-size: 10vw;
     line-height: 1.25;
+    max-width: 90%;
 }
 
 .credentials {
-    max-width: 30%;
-    margin: 50px auto;
+    max-width: 40%;
+    margin: 0rem auto;
 }
 
-.credentialsUsername,
-.credentialsPassword {
-    margin: 15px auto;
+.form-control,
+.custom-file {
+    margin: 0 auto 25px auto !important;
     font-family: 'St Ryde W03 Light';
-}
-
-.credentialsUsername:active,
-.credentialsPassword:active,
-.credentialsUsername:focus,
-.credentialsPassword:focus {
-    border-color: rgba(86, 98, 113, .5);
-    box-shadow: 0 0 0 0.2rem rgba(130,138,145,.5);
 }
 
 .loginButtons {
@@ -103,7 +164,9 @@ body {
 #buttonLogIn:hover,
 #buttonSignUp:hover,
 #buttonLogIn:focus,
-#buttonSignUp:focus {
+#buttonSignUp:focus,
+#buttonpublish:hover,
+#buttonpublish:focus {
     background-color: #424b57;
 }
 
@@ -115,17 +178,43 @@ body {
     margin-left: 10px;
 }
 
+#buttonRegister,
+#buttonpublish {
+    margin: 0;
+    width: 100%;
+}
+
+.headline {
+    background-color: transparent;
+    border: none;
+    margin: 2rem auto;
+}
+
+.headline img {
+    height: 6rem;
+}
+
+label {
+    font-size: 1.1rem;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
 footer {
     background-color: #F26A21 !important;
-    height: 50px;
+    margin-top: 3rem;
+    border-top: 3px solid #fff;
     font-family: 'St Ryde W03 Bold';
     color: #fff;
     text-align: center;
     padding: 15px;
+    display: block;
+    overflow: auto;
 }
 
 footer p {
     opacity: 20%;
+    margin: 0;
 }
 
 /* =================
@@ -134,15 +223,33 @@ MEDIA QUERIES
 
 ================= */
 
-@media only screen and (max-width: 728) {
+/* small devices (phones, 728px and down) */
+@media only screen and (max-width: 728px) {
     
+
+    .jumbotron .logo {
+        width: 20%;
+        margin: 2rem auto 0 auto;
+    }
+
+    .header {
+        font-size: 15vw;
+        line-height: 1.5;
+    }
+
     .credentials {
-        max-width: 90%;
-        margin: 50px auto;
+        max-width: 60%;
     }
 
     .loginButtons {
         display: block;
+    }
+
+    #buttonLogIn,
+    #buttonSignUp {
+        display: block;
+        width: 100%;
+        margin: 1rem auto;
     }
 
 }
