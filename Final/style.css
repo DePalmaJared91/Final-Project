@@ -217,6 +217,15 @@ footer p {
     margin: 0;
 }
 
+.projects-header {
+    margin: 40px 0 40px 0;
+}
+
+.card-header {
+    background: #F26A21;
+    color: #fff;
+}
+
 /* =================
 
 MEDIA QUERIES
