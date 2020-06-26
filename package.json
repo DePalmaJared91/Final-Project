@@ -1,35 +1,46 @@
 {
-  "name": "salon",
-  "version": "1.0.0",
-  "description": "nodejs login with jwt token",
-  "main": "server.js",
-  "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "node server.js",
-    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-    "client": "cd client && npm run start",
-    "seed": "node scripts/seedDB.js",
-    "install": "cd client && npm install",
-    "build": "cd client && npm run build"
-  },
-  "keywords": [
-    "nodejs",
-    "jwt",
-    "passport",
-    "express"
-  ],
-  "author": "Jared DePalma & Meredith Jobs",
-  "license": "ISC",
-  "dependencies": {
-    "bcrypt": "^3.0.0",
-    "body-parser": "^1.17.2",
-    "core-util-is": "^1.0.2",
-    "cors": "^2.8.4",
-    "express": "^4.16.3",
-    "jsonwebtoken": "^7.4.2",
-    "mongodb": "^3.1.6",
-    "mongoose": "^5.2.15",
-    "nodemon": "^1.18.3"
-  },
-  "devDependencies": {}
+	"name": "salon",
+	"version": "1.0.0",
+	"description": "nodejs login with jwt token",
+	"main": "server.js",
+	"scripts": {
+		"start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+		"start:prod": "node server.js",
+		"start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+		"client": "cd client && npm run start",
+		"seed": "node scripts/seedDB.js",
+		"install": "cd client && npm install",
+		"build": "cd client && npm run build"
+	},
+	"keywords": [
+		"nodejs",
+		"jwt",
+		"passport",
+		"express"
+	],
+	"author": "Jared DePalma & Meredith Jobs",
+	"license": "ISC",
+	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^1.2.29",
+		"@fortawesome/free-brands-svg-icons": "^5.13.1",
+		"@fortawesome/free-regular-svg-icons": "^5.13.1",
+		"@fortawesome/free-solid-svg-icons": "^5.13.1",
+		"@fortawesome/react-fontawesome": "^0.1.11",
+		"bcrypt": "^3.0.0",
+		"body-parser": "^1.17.2",
+		"colors": "^1.4.0",
+		"core-util-is": "^1.0.2",
+		"cors": "^2.8.4",
+		"express": "^4.16.3",
+		"jsonwebtoken": "^7.4.2",
+		"mongodb": "^3.1.6",
+		"mongoose": "^5.2.15",
+		"morgan": "^1.10.0",
+		"nodemon": "^1.18.3",
+		"react-bootstrap": "^1.0.1",
+		"yarn": "^1.22.4"
+	},
+	"devDependencies": {
+		"case-sensitive-paths-webpack-plugin": "^2.3.0"
+	}
 }

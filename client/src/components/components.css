@@ -1,0 +1,357 @@
+/*
+FONTS 
+    font-family: "St Ryde Light";
+    font-family: "St Ryde Light Italic";
+    font-family: "St Ryde Medium";
+    font-family: "St Ryde Medium Italic";
+    font-family: "St Ryde Bold";
+    font-family: "St Ryde Bold Italic";
+
+COLORS
+    gray: #566271
+    orange: #F26A21
+    green: #C6D930
+    blue: #A8DCD9
+    red: #C44D58
+*/
+
+/* GLOBAL ============================================ GLOBAL */
+
+.component {
+    background-color: #A8DCD9;
+    width: 100vw;
+}
+
+.page-title {
+  font-family: "St Ryde Bold";
+  font-size: calc(3vw + 1.5em);
+  color: #566271;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-family: "St Ryde Bold";
+  font-size: calc(4vw + 2em);
+  color: #566271;
+}
+
+h5 {
+  font-family: "St Ryde Medium";
+  font-size: .25em;
+  line-height: 1.5;
+}
+
+h6 {
+  font-family: "St Ryde Medium";
+  margin: .6em;
+  font-size: 1.25em;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #3E4854 !important;   
+}
+
+.flex-div {
+  display: flex;
+}
+
+.form-control:focus,
+.form-control:active,
+.form-control:focus-within,
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn:active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn:focus-within
+.checkbox:focus {
+    border: 1px solid #78828f;
+    box-shadow: 0 0 0 0.15rem rgba(75, 86, 99, .25);
+    outline: none !important;
+}
+
+.form-group,
+.custom-file-input {
+  margin: 0 auto;
+  font-family: "St Ryde Light Italic";
+  color: #566271;
+  width: 70vw;
+  max-width: 30rem;
+}
+
+.form-control,
+.custom-file-input,
+.custom-file {
+  margin-bottom: 2vh;
+  min-height: 1.5rem;
+  font-size: calc(1vh + 10px) !important;
+  text-align: left;
+  color: #566271;
+}
+
+.btn {
+  min-height: 1.5rem;
+}
+
+.flex-grow {
+  height: 200px;
+  min-height: 1px;
+  flex-grow: 1;
+}
+
+/* FUNCTIONAL NAVIGATION & TOP NAV ============  */
+
+.navbar {
+  padding: 0;
+}
+
+.functional-navigation,
+.header {
+  background-color: #F26A21;
+  border-bottom: 5px solid white;
+}
+
+.nav-404 {
+  background-color: #C6D930;
+}
+
+.functional-navigation img,
+.header img {
+  height: 3.75vh;
+  min-height: 30px;
+}
+
+.header img {
+  opacity: 50%;
+}
+
+.functional-navigation a {
+  color: #fff;
+}
+
+.nav-link {
+  opacity: 50%;
+  font-size: calc(.5em + 13px);
+  color: #fff !important;
+  max-height: calc(.5 * 3);
+}
+
+.functional-navigation h6 span:hover {
+  padding-bottom: 2px;
+  border-bottom: 5px solid #C6D930;
+}
+
+.active span {
+  opacity: 100% !important;
+  color: #fff;
+  border-bottom: 5px solid #C6D930;
+  padding-bottom: 2px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  height: 1.5em;
+  width: 1.5em;
+  opacity: 75%;
+  margin: 0 0 4px 0;
+}
+
+.navbar-toggler-icon:focus {
+  border-radius: 5px;
+  outline: none !important;
+  border: none !important;
+  box-shadow: 0 0 0 0.2rem rgba(75, 86, 99, .25) !important;
+}
+
+
+/* SIGN UP FORM ============================ SIGN UP FORM */
+
+
+
+/* LANDING PAGE ============================ LANDING PAGE */
+
+.flex-div {
+  display: flex;
+}
+
+#sign-up-button {
+  background-color: #566271 ;
+  border: none !important;
+  height: 5vh;
+  font-size: 2vh;
+  line-height: 5vh;
+  padding: 0;
+  margin: 0;
+}
+
+.text-links {
+  font-family: "St Ryde light italic";
+  margin-top: 2vh;
+  font-size: 2vh;
+  text-align: left;
+  display: flex;
+}
+
+/* LOG IN ============================ LOG IN */
+
+.login-form {
+}
+
+.form-group p {
+  display: block;
+}
+
+#log-in-button,
+#sign-up-link-button {
+  flex-grow: 1;
+  background-color: #566271 ;
+  border: none !important;
+  height: 5vh;
+  font-size: 2vh;
+  line-height: 5vh;
+  padding: 0;
+  font-family: "St Ryde Medium";
+}
+
+#log-in-button {
+  margin-right: 2vh;
+}
+
+#sign-up-link-button {
+  margin-left: 2vh;
+}
+
+.text-links {
+  font-family: "St Ryde light italic";
+  margin-top: 2vh;
+  font-size: 2vh;
+  text-align: left;
+  display: flex;
+}
+
+.text-links p {
+  flex: 1;
+  color: #566271;
+  margin-bottom: 2vh;
+}
+
+.text-links a p:hover {
+  color: #3E4854;
+}
+
+
+/* UPLOAD PROJECT FORM ============================ UPLOAD PROJECT FORM */
+
+.upload-project-form {
+  background-color: #A8DCD9;
+  width: 100vw;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.jumbotron {
+  background: transparent;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 0;
+  flex-grow: 1;
+}
+
+#upload-project-button,
+#sign-up-button {
+  background-color: #566271 ;
+  border: none !important;
+  font-size: 2vh;
+  line-height: 5vh;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: "St Ryde Medium";
+}
+
+.form-check-input {
+  height: 100%; 
+}
+
+.status-select {
+  margin-left: 1vh;
+}
+
+.date-select {
+  margin-right: 1vh;
+}
+
+/* FOOTER ============================================ FOOTER */
+
+.footer {
+  background-color: #F26A21;
+  font-family: "St Ryde Bold";
+  color: #fff;
+  font-size: calc(2vh + 1rem);
+  line-height: 1.5;
+  border-top: 5px solid #fff;
+}
+
+.footer a:hover,
+.footer a:focus {
+  opacity: 80%;
+  text-decoration: none;
+}
+
+.footer-404 {
+  background-color: #C6D930;
+}
+
+.footer a {
+  opacity: 50%;
+  color: #fff;
+}
+
+.page {
+    background-color: #A8DCD9;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.vertical-center {
+    margin:auto;
+}
+
+.vertical-center img {
+    margin-top: 0;
+}
+
+.div-grow {
+    flex-grow: 1;
+}
+
+.jumbotron {
+    background: transparent;
+    text-align: center;
+    display: flex;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.jumbotron img {
+    height: 18vw;
+    margin-bottom: 4px;
+}
+
+.btn:hover {
+    background-color: #3E4854 !important;   
+}
+
