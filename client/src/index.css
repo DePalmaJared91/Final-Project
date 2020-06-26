@@ -1,6 +1,130 @@
-  
+/* FONTS ===================================================== */
+@import url(//db.onlinewebfonts.com/c/a3ed1d5bcb50e8c690267b58be509acc?family=St + Ryde);
+@import url(//db.onlinewebfonts.com/c/8b5e8b9fa5aee291739ff455417bb8d7?family=St + Ryde);
+@import url(//db.onlinewebfonts.com/c/4434dccc79e9d656ada889e101938012?family=St + Ryde);
+@import url(//db.onlinewebfonts.com/c/6536a8df9c8e429b0f9a5f95938eb798?family=St + Ryde);
+@import url(//db.onlinewebfonts.com/c/cd797e2f922f357405db78ed89f64a93?family=St + Ryde);
+@import url(//db.onlinewebfonts.com/c/f52f562f4bee4010e2592e140c97c57b?family=St + Ryde);
+
+@font-face {
+font-family: "St Ryde Light";
+src: url("//db.onlinewebfonts.com/t/8b5e8b9fa5aee291739ff455417bb8d7.eot");
+src: url("//db.onlinewebfonts.com/t/8b5e8b9fa5aee291739ff455417bb8d7.eot?#iefix")
+		format("embedded-opentype"),
+		url("//db.onlinewebfonts.com/t/8b5e8b9fa5aee291739ff455417bb8d7.woff2")
+		format("woff2"),
+		url("//db.onlinewebfonts.com/t/8b5e8b9fa5aee291739ff455417bb8d7.woff")
+		format("woff"),
+		url("//db.onlinewebfonts.com/t/8b5e8b9fa5aee291739ff455417bb8d7.ttf")
+		format("truetype"),
+		url("//db.onlinewebfonts.com/t/8b5e8b9fa5aee291739ff455417bb8d7.svg#St Ryde")
+		format("svg");
+}
+@font-face {
+font-family: "St Ryde Light Italic";
+src: url("//db.onlinewebfonts.com/t/cd797e2f922f357405db78ed89f64a93.eot");
+src: url("//db.onlinewebfonts.com/t/cd797e2f922f357405db78ed89f64a93.eot?#iefix")
+		format("embedded-opentype"),
+		url("//db.onlinewebfonts.com/t/cd797e2f922f357405db78ed89f64a93.woff2")
+		format("woff2"),
+		url("//db.onlinewebfonts.com/t/cd797e2f922f357405db78ed89f64a93.woff")
+		format("woff"),
+		url("//db.onlinewebfonts.com/t/cd797e2f922f357405db78ed89f64a93.ttf")
+		format("truetype"),
+		url("//db.onlinewebfonts.com/t/cd797e2f922f357405db78ed89f64a93.svg#St Ryde")
+		format("svg");
+}
+@font-face {
+font-family: "St Ryde Medium";
+src: url("//db.onlinewebfonts.com/t/4434dccc79e9d656ada889e101938012.eot");
+src: url("//db.onlinewebfonts.com/t/4434dccc79e9d656ada889e101938012.eot?#iefix")
+		format("embedded-opentype"),
+		url("//db.onlinewebfonts.com/t/4434dccc79e9d656ada889e101938012.woff2")
+		format("woff2"),
+		url("//db.onlinewebfonts.com/t/4434dccc79e9d656ada889e101938012.woff")
+		format("woff"),
+		url("//db.onlinewebfonts.com/t/4434dccc79e9d656ada889e101938012.ttf")
+		format("truetype"),
+		url("//db.onlinewebfonts.com/t/4434dccc79e9d656ada889e101938012.svg#St Ryde")
+		format("svg");
+}
+@font-face {
+font-family: "St Ryde Medium Italic";
+src: url("//db.onlinewebfonts.com/t/f52f562f4bee4010e2592e140c97c57b.eot");
+src: url("//db.onlinewebfonts.com/t/f52f562f4bee4010e2592e140c97c57b.eot?#iefix")
+		format("embedded-opentype"),
+		url("//db.onlinewebfonts.com/t/f52f562f4bee4010e2592e140c97c57b.woff2")
+		format("woff2"),
+		url("//db.onlinewebfonts.com/t/f52f562f4bee4010e2592e140c97c57b.woff")
+		format("woff"),
+		url("//db.onlinewebfonts.com/t/f52f562f4bee4010e2592e140c97c57b.ttf")
+		format("truetype"),
+		url("//db.onlinewebfonts.com/t/f52f562f4bee4010e2592e140c97c57b.svg#St Ryde")
+		format("svg");
+}
+@font-face {
+font-family: "St Ryde Bold";
+src: url("//db.onlinewebfonts.com/t/a3ed1d5bcb50e8c690267b58be509acc.eot");
+src: url("//db.onlinewebfonts.com/t/a3ed1d5bcb50e8c690267b58be509acc.eot?#iefix")
+		format("embedded-opentype"),
+		url("//db.onlinewebfonts.com/t/a3ed1d5bcb50e8c690267b58be509acc.woff2")
+		format("woff2"),
+		url("//db.onlinewebfonts.com/t/a3ed1d5bcb50e8c690267b58be509acc.woff")
+		format("woff"),
+		url("//db.onlinewebfonts.com/t/a3ed1d5bcb50e8c690267b58be509acc.ttf")
+		format("truetype"),
+		url("//db.onlinewebfonts.com/t/a3ed1d5bcb50e8c690267b58be509acc.svg#St Ryde")
+		format("svg");
+}
+@font-face {
+font-family: "St Ryde Bold Italic";
+src: url("//db.onlinewebfonts.com/t/6536a8df9c8e429b0f9a5f95938eb798.eot");
+src: url("//db.onlinewebfonts.com/t/6536a8df9c8e429b0f9a5f95938eb798.eot?#iefix")
+		format("embedded-opentype"),
+		url("//db.onlinewebfonts.com/t/6536a8df9c8e429b0f9a5f95938eb798.woff2")
+		format("woff2"),
+		url("//db.onlinewebfonts.com/t/6536a8df9c8e429b0f9a5f95938eb798.woff")
+		format("woff"),
+		url("//db.onlinewebfonts.com/t/6536a8df9c8e429b0f9a5f95938eb798.ttf")
+		format("truetype"),
+		url("//db.onlinewebfonts.com/t/6536a8df9c8e429b0f9a5f95938eb798.svg#St Ryde")
+		format("svg");
+}
+
+/* INDEX.HTML ===================================================== */
+
+html {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-  }
+		margin: 0;
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		background-color: #C6D930;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+}
+
+code {
+		font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+#root {
+		min-height: 100vh;
+}
+
+
+
+
+
+
+
+
