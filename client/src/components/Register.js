@@ -111,12 +111,18 @@ class Register extends Component {
 
 						</form>
 
+						<div className="text-links">
+                            <a href="/">
+                                <p>return to log in page</p>
+                            </a>
+                        </div>
+
 					</div>
 
 				</Jumbotron>
 
 				<Footer />
-				
+
 			</div>
 
 		)

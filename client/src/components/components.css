@@ -176,13 +176,6 @@ a:hover {
 
 
 /* LANDING PAGE ============================ LANDING PAGE */
-.landing-page {
-  background-image: url('../assets/images/salon-pattern-multi.svg');
-  background-repeat: repeat;
-  background-image: scale(200);
-}
-
-
 
 .flex-div {
   display: flex;
