@@ -1,4 +1,5 @@
 var express = require('express')
+const path = require('path');
 var cors = require('cors')
 var bodyParser = require('body-parser')
 var app = express()
@@ -13,7 +14,7 @@ app.use(
   })
 )
 
-const mongoURI = 'mongodb://localhost:27017/mernloginreg'
+const mongoURI = 'mongodb+srv://mermer143:Duchess143!@cluster0-ge9yd.mongodb.net/?retryWrites=true&w=majority'
 
 mongoose
   .connect(
@@ -23,9 +24,12 @@ mongoose
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err))
 
+app.use(express.static(path.join(__dirname, 'client/build')));
+
 var Users = require('./routes/Users')
 
 app.use('/users', Users)
+
 
 app.listen(port, () => {
   console.log('Server is running on port: ' + port)
