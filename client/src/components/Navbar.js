@@ -40,7 +40,7 @@ class Landing extends Component {
 		)
 
 		return (
-			<nav className="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+			<nav className="functional-navigation navbar navbar-expand-lg navbar-dark rounded">
 				<button
 					className="navbar-toggler"
 					type="button"
