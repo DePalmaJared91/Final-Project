@@ -10,7 +10,7 @@ import Upload from "./components/Upload"
 import PageNotFound from "./components/PageNotFound"
 
 class App extends Component {
-<<<<<<< HEAD
+
 	render() {
 		return (
 			<Router>
@@ -26,7 +26,7 @@ class App extends Component {
 			</Router>
 		)
 	}
-=======
+
   render() {
     return (
       <Router>
@@ -44,7 +44,6 @@ class App extends Component {
       </Router>
     );
   }
->>>>>>> master
 }
 
 export default App;

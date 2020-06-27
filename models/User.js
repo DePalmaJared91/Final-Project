@@ -40,8 +40,7 @@ const UserSchema = new Schema({
 	},
 	social_links: {
 		type: String
-	},
-	
+	}
 })
 
 module.exports = User = mongoose.model('users', UserSchema)
