@@ -10,7 +10,7 @@ export const register = newUser => {
       password: newUser.password
     })
     .then(response => {
-      console.log('user sign up sucessful! log in to continue.')
+      console.log('Sign up successful! Log in to continue.')
     })
 }
 
