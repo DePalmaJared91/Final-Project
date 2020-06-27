@@ -83,17 +83,6 @@ class Register extends Component {
 									onChange={this.onChange}
 								/>
 							</div>
-
-							<div className="form-group">
-								<input
-									type="text"
-									className="form-control"
-									name="user_name"
-									placeholder="username"
-									value={this.state.user_name}
-									onChange={this.onChange}
-								/>
-							</div>
 							
 							<div className="form-group">
 								<input
