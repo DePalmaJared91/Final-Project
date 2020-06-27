@@ -17,6 +17,10 @@ const UserSchema = new Schema({
 		type: String,
 		required: true
 	},
+	user_name: {
+		type: String,
+		required: true
+	},
 	password: {
 		type: String,
 		required: true
@@ -40,8 +44,7 @@ const UserSchema = new Schema({
 	},
 	social_links: {
 		type: String
-	},
-	
+	}
 })
 
 module.exports = User = mongoose.model('users', UserSchema)

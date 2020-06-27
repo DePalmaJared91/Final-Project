@@ -59,7 +59,7 @@ class Register extends Component {
 						alt="Salon Icon"
 						src={logo}
 						/>{' '}
-						<h1>bonjour</h1>
+						<h1>sign up</h1>
 
 						<form noValidate onSubmit={this.onSubmit}>
 							
@@ -84,17 +84,6 @@ class Register extends Component {
 									onChange={this.onChange}
 								/>
 							</div>
-
-							<div className="form-group">
-								<input
-									type="text"
-									className="form-control"
-									name="user_name"
-									placeholder="username"
-									value={this.state.user_name}
-									onChange={this.onChange}
-								/>
-							</div>
 							
 							<div className="form-group">
 								<input
@@ -103,6 +92,17 @@ class Register extends Component {
 									name="email"
 									placeholder="email"
 									value={this.state.email}
+									onChange={this.onChange}
+								/>
+							</div>
+
+							<div className="form-group">
+								<input
+									type="text"
+									className="form-control"
+									name="user_name"
+									placeholder="username"
+									value={this.state.user_name}
 									onChange={this.onChange}
 								/>
 							</div>

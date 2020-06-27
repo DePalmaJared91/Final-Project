@@ -21,6 +21,7 @@ users.post('/register', (req, res) => {
 		user_name: req.body.user_name, 
 >>>>>>> master
 		email: req.body.email,
+		user_name: req.body.user_name,
 		password: req.body.password,
 		created: today
 	}
@@ -82,7 +83,7 @@ users.post('/login', (req, res) => {
 		})
 })
 
-users.get('/profile', (req, res) => {
+users.get('/studio', (req, res) => {
 	var decoded = jwt.verify(req.headers['authorization'], process.env.SECRET_KEY)
 
 	User.findOne({

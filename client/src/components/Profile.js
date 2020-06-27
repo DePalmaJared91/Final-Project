@@ -1,12 +1,14 @@
 	
 import React, { Component } from 'react'
 import jwt_decode from 'jwt-decode'
+import Landing from './Navbar'
 
 class Profile extends Component {
 	constructor() {
 		super()
 		this.state = {
 			first_name: '',
+			user_name: '',
 			last_name: '',
 			user_name: '',
 			email: '',
@@ -27,7 +29,9 @@ class Profile extends Component {
 
 	render() {
 		return (
-			<div className="container">
+			<div>
+				<div className="container">
+				
 				<div className="jumbotron mt-5">
 					<div className="col-sm-8 mx-auto">
 						<h1 className="text-center">PROFILE</h1>
@@ -53,7 +57,9 @@ class Profile extends Component {
 						</tbody>
 					</table>
 				</div>
+				</div>
 			</div>
+		
 		)
 	}
 }

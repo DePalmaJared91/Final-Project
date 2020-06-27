@@ -113,6 +113,7 @@ a:hover {
 .header {
   background-color: #F26A21;
   border-bottom: 5px solid white;
+  border-radius: 0px;
 }
 
 .nav-404 {
