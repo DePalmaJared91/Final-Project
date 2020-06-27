@@ -8,7 +8,6 @@ class Profile extends Component {
 		super()
 		this.state = {
 			first_name: '',
-			user_name: '',
 			last_name: '',
 			user_name: '',
 			email: '',
@@ -30,6 +29,7 @@ class Profile extends Component {
 	render() {
 		return (
 			<div>
+				<Landing />
 				<div className="container">
 				
 				<div className="jumbotron mt-5">

@@ -12,7 +12,6 @@ class Register extends Component {
 		this.state = {
 			first_name: '',
 			last_name: '',
-			user_name: '',
 			email: '',
 			user_name: '',
 			password: '',
@@ -32,8 +31,8 @@ class Register extends Component {
 		const newUser = {
 			first_name: this.state.first_name,
 			last_name: this.state.last_name,
-			user_name: this.state.user_name, 
 			email: this.state.email,
+			user_name: this.state.user_name,
 			password: this.state.password
 		}
 
@@ -58,7 +57,7 @@ class Register extends Component {
 						alt="Salon Icon"
 						src={logo}
 						/>{' '}
-						<h1>sign up</h1>
+						<h1>bonjour</h1>
 
 						<form noValidate onSubmit={this.onSubmit}>
 							
@@ -83,6 +82,7 @@ class Register extends Component {
 									onChange={this.onChange}
 								/>
 							</div>
+
 							
 							<div className="form-group">
 								<input
@@ -94,10 +94,11 @@ class Register extends Component {
 									onChange={this.onChange}
 								/>
 							</div>
+							
 
 							<div className="form-group">
 								<input
-									type="text"
+									type="user_name"
 									className="form-control"
 									name="user_name"
 									placeholder="username"
@@ -105,7 +106,8 @@ class Register extends Component {
 									onChange={this.onChange}
 								/>
 							</div>
-							
+
+
 							<div className="form-group">
 								<input
 									type="password"
