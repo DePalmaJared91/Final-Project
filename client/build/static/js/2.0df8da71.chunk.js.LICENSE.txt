@@ -5,10 +5,16 @@ object-assign
 */
 
 /*!
+  Copyright (c) 2017 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+
+/*!
  * Determine if an object is a Buffer
  *
- * @author	 Feross Aboukhadijeh <https://feross.org>
- * @license	MIT
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
  */
 
 /** @license React v0.19.1
