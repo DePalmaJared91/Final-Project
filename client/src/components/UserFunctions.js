@@ -32,7 +32,7 @@ export const login = user => {
 
 export const getProfile = user => {
   return axios
-    .get('users/profile', {
+    .get('users/studio', {
       //headers: { Authorization: ` ${this.getToken()}` }
     })
     .then(response => {

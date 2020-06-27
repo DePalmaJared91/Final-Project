@@ -30,7 +30,6 @@ class Profile extends Component {
 	render() {
 		return (
 			<div>
-				<Landing />
 				<div className="container">
 				
 				<div className="jumbotron mt-5">
