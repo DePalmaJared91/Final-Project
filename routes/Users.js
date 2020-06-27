@@ -15,7 +15,11 @@ users.post('/register', (req, res) => {
 	const userData = {
 		first_name: req.body.first_name,
 		last_name: req.body.last_name,
+<<<<<<< HEAD
 		user_name: req.body.user_name,
+=======
+		user_name: req.body.user_name, 
+>>>>>>> master
 		email: req.body.email,
 		password: req.body.password,
 		created: today
@@ -58,6 +62,7 @@ users.post('/login', (req, res) => {
 						first_name: user.first_name,
 						user_name: user.user_name,
 						last_name: user.last_name,
+						user_name: user.user_name,
 						email: user.email
 					}
 					let token = jwt.sign(payload, process.env.SECRET_KEY, {

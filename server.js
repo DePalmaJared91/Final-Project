@@ -14,7 +14,7 @@ app.use(
 	})
 )
 
-const mongoURI = 'mongodb+srv://mermer143:Duchess143!@cluster0-ge9yd.mongodb.net/?retryWrites=true&w=majority'
+const mongoURI = 'mongodb+srv://mermer143:Duchess143!@cluster0-ge9yd.mongodb.net/FinalProject?retryWrites=true&w=majority'
 
 mongoose
 	.connect(

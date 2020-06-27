@@ -9,6 +9,10 @@ const UserSchema = new Schema({
 	last_name: {
 		type: String
 	},
+	user_name: {
+		type: String,
+		required: true
+	},
 	email: {
 		type: String,
 		required: true
@@ -24,7 +28,20 @@ const UserSchema = new Schema({
 	date: {
 		type: Date,
 		default: Date.now
-	}
+	},
+	profile_picture: {
+		type: String 
+	},
+	location: {
+		type: String
+	},
+	bio: {
+		type: String
+	},
+	social_links: {
+		type: String
+	},
+	
 })
 
 module.exports = User = mongoose.model('users', UserSchema)
