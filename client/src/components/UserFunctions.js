@@ -6,6 +6,7 @@ export const register = newUser => {
       first_name: newUser.first_name,
       last_name: newUser.last_name,
       email: newUser.email,
+      user_name: newUser.user_name,
       password: newUser.password
     })
     .then(response => {

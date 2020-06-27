@@ -8,6 +8,7 @@ class Register extends Component {
 			first_name: '',
 			last_name: '',
 			email: '',
+			user_name: '',
 			password: '',
 			errors: {}
 		}
@@ -26,6 +27,7 @@ class Register extends Component {
 			first_name: this.state.first_name,
 			last_name: this.state.last_name,
 			email: this.state.email,
+			user_name: this.state.user_name,
 			password: this.state.password
 		}
 
@@ -63,14 +65,26 @@ class Register extends Component {
 									onChange={this.onChange}
 								/>
 							</div>
+							
 							<div className="form-group">
-								<label htmlFor="email">Email address</label>
+								<label htmlFor="email">Username</label>
 								<input
 									type="email"
 									className="form-control"
 									name="email"
-									placeholder="Enter email"
-									value={this.state.email}
+									placeholder="Enter username"
+									value={this.state.user_name}
+									onChange={this.onChange}
+								/>
+							</div>
+							<div className="form-group">
+								<label htmlFor="name">First name</label>
+								<input
+									type="text"
+									className="form-control"
+									name="user"
+									placeholder="Enter your first name"
+									value={this.state.user}
 									onChange={this.onChange}
 								/>
 							</div>

@@ -13,6 +13,7 @@ class Register extends Component {
 			first_name: '',
 			last_name: '',
 			email: '',
+			user_name: '',
 			password: '',
 			errors: {}
 		}
@@ -31,6 +32,7 @@ class Register extends Component {
 			first_name: this.state.first_name,
 			last_name: this.state.last_name,
 			email: this.state.email,
+			user_name: this.state.user_name,
 			password: this.state.password
 		}
 
@@ -90,6 +92,19 @@ class Register extends Component {
 								/>
 							</div>
 							
+
+							<div className="form-group">
+								<input
+									type="user_name"
+									className="form-control"
+									name="user_name"
+									placeholder="username"
+									value={this.state.user_name}
+									onChange={this.onChange}
+								/>
+							</div>
+
+
 							<div className="form-group">
 								<input
 									type="password"
