@@ -4,10 +4,12 @@ const Schema = mongoose.Schema
 // Create Schema
 const UserSchema = new Schema({
 	first_name: {
-		type: String
+		type: String,
+		required: true
 	},
 	last_name: {
-		type: String
+		type: String,
+		required: true
 	},
 	user_name: {
 		type: String,

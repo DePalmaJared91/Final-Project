@@ -10,8 +10,8 @@ class Header404 extends Component {
     render() {
         return (
 
-            <div className="header nav-404">    
-            <Navbar collapseOnSelect className="navbar" expand="lg">
+            <div className="header">    
+            <Navbar collapseOnSelect className="navbar nav-404" expand="lg">
             <Navbar.Brand href="/">
                 <img src={logo}
                 alt="Salon logo"></img>

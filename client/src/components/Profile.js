@@ -1,7 +1,9 @@
-	
-import React, { Component } from 'react'
-import jwt_decode from 'jwt-decode'
-import Landing from './Navbar'
+import React, { Component } from 'react';
+import jwt_decode from 'jwt-decode';
+import Card from 'react-bootstrap/Card';
+import './components.css';
+import ProfilePhoto from '../assets/images/salon-default-profile-pic.png'
+
 
 class Profile extends Component {
 	constructor() {
@@ -10,7 +12,7 @@ class Profile extends Component {
 			first_name: '',
 			last_name: '',
 			user_name: '',
-			email: '',
+            email: '',
 			errors: {}
 		}
 	}
@@ -22,44 +24,37 @@ class Profile extends Component {
 			first_name: decoded.first_name,
 			last_name: decoded.last_name,
 			user_name: decoded.user_name,
-			email: decoded.email
+            email: decoded.email,
+            profile_photo: '../assets/images/salon-default-profile-pic.png'
 		})
 	}
 
 	render() {
 		return (
-			<div>
-				<Landing />
-				<div className="container">
+				<div className="profile-section">
 				
-				<div className="jumbotron mt-5">
-					<div className="col-sm-8 mx-auto">
-						<h1 className="text-center">PROFILE</h1>
-					</div>
-					<table className="table col-md-6 mx-auto">
-						<tbody>
-							<tr>
-								<td>Fist Name</td>
-								<td>{this.state.first_name}</td>
-							</tr>
-							<tr>
-								<td>Last Name</td>
-								<td>{this.state.last_name}</td>
-							</tr>
-							<tr>
-								<td>Username</td>
-								<td>{this.state.user_name}</td>
-							</tr>
-							<tr>
-								<td>Email</td>
-								<td>{this.state.email}</td>
-							</tr>
-						</tbody>
-					</table>
+                    <div className="section-title">
+                        Your Profile
+                    </div>
+
+                    <Card
+                    className="profile-card">
+                        <Card.Img
+                            class="profile-image"
+                            src={ProfilePhoto}
+                            alt={this.state.user_name}
+                        >
+                        </Card.Img>
+                        
+                        <Card.Body>
+
+                        <h2>{this.state.user_name}</h2>
+
+                        </Card.Body>
+
+                        </Card>
+
 				</div>
-				</div>
-			</div>
-		
 		)
 	}
 }

@@ -35,6 +35,13 @@ h1 {
   color: #566271;
 }
 
+h2 {
+  font-family: "St Ryde Bold";
+  font-size: 2.25rem;
+  color: #C44D58;
+  margin-bottom: .2rem;
+}
+
 h5 {
   font-family: "St Ryde Medium";
   font-size: .25em;
@@ -105,10 +112,6 @@ a:hover {
 
 /* FUNCTIONAL NAVIGATION & TOP NAV ============  */
 
-.navbar {
-  padding: 0;
-}
-
 .functional-navigation,
 .header {
   background-color: #F26A21;
@@ -117,13 +120,18 @@ a:hover {
 }
 
 .nav-404 {
-  background-color: #C6D930;
+  background-color: #C6D930 !important;
 }
 
 .functional-navigation img,
+.navbar img,
 .header img {
   height: 3.75vh;
   min-height: 30px;
+}
+
+.navbar a:hover {
+  opacity: 100;
 }
 
 .header img {
@@ -139,6 +147,7 @@ a:hover {
   font-size: calc(.5em + 13px);
   color: #fff !important;
   max-height: calc(.5 * 3);
+  padding: 0;
 }
 
 .functional-navigation h6 span:hover {
@@ -171,6 +180,13 @@ a:hover {
   box-shadow: 0 0 0 0.2rem rgba(75, 86, 99, .25) !important;
 }
 
+.navbar {
+  background-color: #F26A21;
+  font-family: "St Ryde Medium";
+  font-size: calc(.5vh + 10px);
+  line-height: 1;
+  padding: 0;
+}
 
 /* SIGN UP FORM ============================ SIGN UP FORM */
 
@@ -200,10 +216,12 @@ a:hover {
   display: flex;
 }
 
-/* LOG IN ============================ LOG IN */
-
-.login-form {
+.navbar-brand {
+  padding-top: 0 !important;
+  padding-bottom: 0;
 }
+
+/* LOG IN ============================ LOG IN */
 
 .form-group p {
   display: block;
@@ -245,6 +263,52 @@ a:hover {
 
 .text-links a p:hover {
   color: #3E4854;
+}
+
+.navbar-toggler {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-toggler-icon {
+  margin: 0 0 0 0;
+}
+
+/* PROFILE ===============================--------------======= PROFILE */
+
+.profile-section {
+  /* background-color: #fff; */
+}
+
+.section-title{
+  background-color: #3E4854;
+  font-family: "St Ryde Bold";
+  font-size: calc(1.5vh + 16px);
+  color: #fff;
+  line-height: 1;
+  padding: 0;
+}
+
+.profile-card {
+  background-color: #fff;
+  padding: 2rem;
+  width: 90vw;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 20vh;
+  height: 20vh;
+  min-height: 10rem;
+  min-width: 10rem;
+  object-fit:cover;
+  cursor: pointer;
+  border: calc(.8vh + 4px) #A8DCD9 solid;
 }
 
 

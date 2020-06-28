@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { Link, withRouter } from 'react-router-dom'
+import Logo from '../assets/images/salon-wordmark-white.svg'
 
-class Landing extends Component {
+class Navbar extends Component {
 	logOut(e) {
 		e.preventDefault()
 		localStorage.removeItem('usertoken')
@@ -10,6 +11,7 @@ class Landing extends Component {
 
 	render() {
 		const loginRegLink = (
+
 			<ul className="navbar-nav">
 				<li className="nav-item">
 					<Link to="/login" className="nav-link">
@@ -22,13 +24,20 @@ class Landing extends Component {
 					</Link>
 				</li>
 			</ul>
+
 		)
 
 		const userLink = (
 			<ul className="navbar-nav">
+
 				<li className="nav-item">
 					<Link to="/studio" className="nav-link">
-						User
+						Your Studio
+					</Link>
+				</li>
+				<li className="nav-item">
+					<Link to="/gallery" className="nav-link">
+						Browse Gallery
 					</Link>
 				</li>
 				<li className="nav-item">
@@ -40,7 +49,14 @@ class Landing extends Component {
 		)
 
 		return (
-			<nav className="functional-navigation navbar navbar-expand-lg navbar-dark rounded">
+
+			<div>
+
+			
+			<nav className="navbar navbar-expand-lg navbar-dark">
+			<img className=""
+			src={Logo}
+				alt="Salon logo"></img>
 				<button
 					className="navbar-toggler"
 					type="button"
@@ -54,21 +70,22 @@ class Landing extends Component {
 				</button>
 
 				<div
-					className="collapse navbar-collapse justify-content-md-center"
+					className="collapse navbar-collapse"
 					id="navbarsExample10"
 				>
-					<ul className="navbar-nav">
+					{/* <ul className="navbar-nav">
 						<li className="nav-item">
 							<Link to="/" className="nav-link">
 								Home
 							</Link>
 						</li>
-					</ul>
+					</ul> */}
 					{localStorage.usertoken ? userLink : loginRegLink}
 				</div>
 			</nav>
+			</div>
 		)
 	}
 }
 
-export default withRouter(Landing)
+export default withRouter(Navbar)
