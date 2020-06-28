@@ -36,12 +36,10 @@ class Navbar extends Component {
 
 		const userLink = (
 			
-			<div>
+			<div className="navbar-container">
 
 				<div className="nav-ul flex-div">
-						
-						<div className="">
-							
+													
 							<ul className="navbar-nav">
 							
 								<li className="nav-item">
@@ -70,9 +68,7 @@ class Navbar extends Component {
 								</li>
 
 							</ul>
-						
-						</div>
-					
+											
 				</div>
 
 			</div>

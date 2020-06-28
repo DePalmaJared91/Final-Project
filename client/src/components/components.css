@@ -249,6 +249,27 @@ a:hover {
   box-shadow: 0 0 0 0.2rem rgba(75, 86, 99, .25) !important;
 }
 
+
+.collapse,
+.navbar-container,
+.navbar-nav,
+#navbarsExample10 {
+  align-items: end;
+  float: right;
+  text-align: right;
+  float: right;
+  text-align: right;
+}
+
+.navbar-brand {
+  padding-top: 0 !important;
+  padding-bottom: 0;
+}
+
+#navbarsExample10 {
+  float: right !important;
+}
+
 /* LANDING PAGE ============================ LANDING PAGE */
 
 #sign-up-button {
@@ -267,11 +288,6 @@ a:hover {
   font-size: 2vh;
   text-align: left;
   display: flex;
-}
-
-.navbar-brand {
-  padding-top: 0 !important;
-  padding-bottom: 0;
 }
 
 .search-button {
