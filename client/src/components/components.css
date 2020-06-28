@@ -117,7 +117,6 @@ a:hover {
   font-family: "St Ryde Light Italic";
   color: #566271;
   width: 70vw;
-  max-width: 30rem;
 }
 
 .form-control,
@@ -138,6 +137,12 @@ a:hover {
   height: 200px;
   min-height: 1px;
   flex-grow: 1;
+}
+
+
+.jumbotron img {
+  height: 22vw;
+  margin-bottom: 4px;
 }
 
 /* NAVIGATION BARS ============ NAVIGATION BARS  */
@@ -190,18 +195,18 @@ a:hover {
 
 .search-input-field {
   padding: 4px 0 4px 7px !important;
-  margin: 0 !important;
+  margin: 0 15px 0 0 !important;
   font-family: 'St Ryde Light';
   border: 1px rgba(255, 255, 255, .5) solid;
   background-color: transparent;
   font-size: 10px;
   color: #fff;
+  width: 70%
 }
 
 .search-button {
   background-color: transparent;
   border: none;
-  margin-left: 10px !important;
   opacity: 50%;
   font-size: 20px;
   color: #fff !important;
@@ -247,18 +252,6 @@ a:hover {
   outline: none !important;
   border: none !important;
   box-shadow: 0 0 0 0.2rem rgba(75, 86, 99, .25) !important;
-}
-
-
-.collapse,
-.navbar-container,
-.navbar-nav,
-#navbarsExample10 {
-  align-items: end;
-  float: right;
-  text-align: right;
-  float: right;
-  text-align: right;
 }
 
 .navbar-brand {
@@ -501,7 +494,6 @@ a:hover {
 
 .page {
     background-color: #A8DCD9;
-    width: 100vw;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -528,18 +520,12 @@ a:hover {
     margin-bottom: 0;
 }
 
-.jumbotron img {
-    height: 18vw;
-    margin-bottom: 4px;
-}
-
 .btn:hover {
     background-color: #3E4854 !important;   
 }
 
 
-
-
+/* ======================================================== */
 
 
 @media only screen and (max-width: 1200px) {
@@ -567,7 +553,9 @@ a:hover {
   .profile-card-body {
     padding-left: 0;
   }
+
 }
+
 
 @media only screen and (max-width: 480px) {
 
@@ -581,4 +569,5 @@ a:hover {
   .profile-card-body {
     padding-left: 0;
   }
+
 }
