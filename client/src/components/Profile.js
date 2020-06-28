@@ -91,11 +91,24 @@ class Profile extends Component {
 
                         </div>
 
-                        <Button
-                        className="edit-profile-button"
-                        variant="primary">
-                        Edit Profile</Button>
+                        <div className="flex-div">
 
+                            
+                            <Button className="edit-profile-button"
+                            variant="primary">
+                            Edit Profile
+                            </Button>
+                            
+                            <Button className="upload-project-button"
+                            variant="primary">
+                            Upload a Project
+                            </Button>
+                            
+
+
+                        </div>
+
+                        
                         </Card.Body>
 
                         </Card>

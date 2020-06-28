@@ -11,7 +11,7 @@ class Header404 extends Component {
         return (
 
             <div className="header">    
-            <Navbar collapseOnSelect className="navbar nav-404" expand="lg">
+            <Navbar collapseOnSelect className="navbar header-404" expand="lg">
             <Navbar.Brand href="/">
                 <img src={logo}
                 alt="Salon logo"></img>

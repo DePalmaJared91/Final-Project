@@ -1,6 +1,13 @@
 import React, { Component } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import Logo from '../assets/images/salon-wordmark-white.svg'
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import FormControl from 'react-bootstrap/FormControl';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
+
+
 
 class Navbar extends Component {
 	logOut(e) {
@@ -20,7 +27,7 @@ class Navbar extends Component {
 				</li>
 				<li className="nav-item">
 					<Link to="/register" className="nav-link">
-						Register
+						Sign Up
 					</Link>
 				</li>
 			</ul>
@@ -28,35 +35,58 @@ class Navbar extends Component {
 		)
 
 		const userLink = (
-			<ul className="navbar-nav">
+			
+			<div>
 
-				<li className="nav-item">
-					<Link to="/studio" className="nav-link">
-						Your Studio
-					</Link>
-				</li>
-				<li className="nav-item">
-					<Link to="/gallery" className="nav-link">
-						Browse Gallery
-					</Link>
-				</li>
-				<li className="nav-item">
-					<a href="/" onClick={this.logOut.bind(this)} className="nav-link">
-						Logout
-					</a>
-				</li>
-			</ul>
+				<div className="nav-ul flex-div">
+						
+						<div className="">
+							
+							<ul className="navbar-nav">
+							
+								<li className="nav-item">
+									<Link to="/studio" className="nav-link">
+										Your Studio
+									</Link>
+								</li>
+								<li className="nav-item">
+									<Link to="/gallery" className="nav-link">
+										Browse Gallery
+									</Link>
+								</li>
+								<li className="nav-item">
+									<a href="/"
+									onClick={this.logOut.bind(this)} className="nav-link">
+										Logout
+									</a>
+								</li>
+								
+								<li className="nav-item search-nav-item">
+									<Form inline className="search-form">
+									<FormControl type="text" placeholder="Search" className="search-input-field" />
+									<div className="search-button">
+									<FontAwesomeIcon icon={faSearch} /></div>
+									</Form>
+								</li>
+
+							</ul>
+						
+						</div>
+					
+				</div>
+
+			</div>
 		)
 
 		return (
 
-			<div>
-
+			<div className="header">
 			
 			<nav className="navbar navbar-expand-lg navbar-dark">
 			<img className=""
-			src={Logo}
+				src={Logo}
 				alt="Salon logo"></img>
+				
 				<button
 					className="navbar-toggler"
 					type="button"
@@ -80,6 +110,7 @@ class Navbar extends Component {
 							</Link>
 						</li>
 					</ul> */}
+
 					{localStorage.usertoken ? userLink : loginRegLink}
 				</div>
 			</nav>

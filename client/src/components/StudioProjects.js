@@ -34,14 +34,6 @@ class StudioProjects extends Component {
 				</div>
 
 				<div className="text-center">
-
-				
-				<Button
-				href="/register"
-				id="upload-project-button">
-				Upload a Project
-				</Button>
-
 				<h1  className="mt-5 mb-5 text-center">display user<br></br>projects here</h1>
 				
 				</div>
