@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import jwt_decode from 'jwt-decode';
-import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 
 class StudioProjects extends Component {
@@ -29,15 +29,23 @@ class StudioProjects extends Component {
 	render() {
 		return (
 			<div>
-				<div>
-				
 				<div className="section-title">
 				Your Gallery
 				</div>
-					<h1  className="mt-5 mb-5 text-center">display user<br></br>projects here</h1>
+
+				<div className="text-center">
+
+				
+				<Button
+				href="/register"
+				id="upload-project-button">
+				Upload a Project
+				</Button>
+
+				<h1  className="mt-5 mb-5 text-center">display user<br></br>projects here</h1>
+				
 				</div>
 			</div>
-		
 		)
 	}
 }

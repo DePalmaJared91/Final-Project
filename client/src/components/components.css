@@ -42,16 +42,25 @@ h2 {
   margin-bottom: .2rem;
 }
 
+h3 {
+  font-family: "St Ryde Bold";
+  font-size: 1.25rem; 
+  color: #566271;
+  margin-bottom: .3rem;
+}
+
+h4 {
+  font-family: "St Ryde Light";
+  font-size: 1.25rem;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+
+
 h5 {
   font-family: "St Ryde Medium";
   font-size: .25em;
   line-height: 1.5;
-}
-
-h6 {
-  font-family: "St Ryde Medium";
-  margin: .6em;
-  font-size: 1.25em;
 }
 
 a:hover {
@@ -59,7 +68,7 @@ a:hover {
 }
 
 .btn:hover {
-  background-color: #3E4854 !important;   
+  background-color: #3E4854 !important; 
 }
 
 .flex-div {
@@ -76,8 +85,8 @@ a:hover {
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn:focus-within
 .checkbox:focus {
-    border: 1px solid #78828f;
-    box-shadow: 0 0 0 0.15rem rgba(75, 86, 99, .25);
+    border: 1px solid #78828f !important;
+    box-shadow: 0 0 0 0.15rem rgba(75, 86, 99, .25) !important;
     outline: none !important;
 }
 
@@ -115,7 +124,6 @@ a:hover {
 .functional-navigation,
 .header {
   background-color: #F26A21;
-  border-bottom: 5px solid white;
   border-radius: 0px;
 }
 
@@ -128,6 +136,7 @@ a:hover {
 .header img {
   height: 3.75vh;
   min-height: 30px;
+  margin-right: 1rem;
 }
 
 .navbar a:hover {
@@ -186,6 +195,7 @@ a:hover {
   font-size: calc(.5vh + 10px);
   line-height: 1;
   padding: 0;
+  border-bottom: 5px solid white;
 }
 
 /* SIGN UP FORM ============================ SIGN UP FORM */
@@ -274,10 +284,11 @@ a:hover {
   margin: 0 0 0 0;
 }
 
-/* PROFILE ===============================--------------======= PROFILE */
+/* STUDIO ===============================--------------======= STUDIO */
 
 .profile-section {
-  /* background-color: #fff; */
+  background-color: #fff;
+
 }
 
 .section-title{
@@ -287,6 +298,7 @@ a:hover {
   color: #fff;
   line-height: 1;
   padding: 0;
+  border-bottom: 5px solid #C6D930;
 }
 
 .profile-card {
@@ -296,8 +308,8 @@ a:hover {
   border: none;
   display: flex;
   flex-direction: row;
-  max-width: 100%;
-  margin: 0 auto;
+  max-width: 800px;
+  margin: 10px auto;
 }
 
 .profile-image {
@@ -310,6 +322,48 @@ a:hover {
   cursor: pointer;
   border: calc(.8vh + 4px) #A8DCD9 solid;
 }
+
+.profile-card-body {
+  padding-top: 0;
+  padding-left: 30px;
+}
+
+.profile-link-icon {
+  color: #566271;
+  margin-right: .75rem;
+  margin-bottom: 1rem;
+  font-size: min(max(10px, 6vw), 30px);
+}
+
+.profile-link-icon:hover {
+  color: #3E4854;
+}
+
+.edit-profile-button {
+  background-color: #F26A21;
+  color: #fff;
+  font-family: "St Ryde Medium";
+  border: none;
+  margin: 0;
+}
+
+#upload-project-button {
+  border: none !important;
+  font-size: 2vh;
+  line-height: 5vh;
+  width: 60vw;
+  max-width: 500px;
+  padding: 0;
+  margin: 0;
+  background-color: #C44D58 ;
+  height: 5vh;
+  font-size: 2vh;
+  line-height: 5vh;
+  padding: 0;
+  font-family: "St Ryde Medium";
+}
+
+
 
 
 /* UPLOAD PROJECT FORM ============================ UPLOAD PROJECT FORM */
@@ -334,7 +388,6 @@ a:hover {
   flex-grow: 1;
 }
 
-#upload-project-button,
 #sign-up-button {
   background-color: #566271 ;
   border: none !important;
@@ -420,3 +473,49 @@ a:hover {
     background-color: #3E4854 !important;   
 }
 
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+
+  .profile-card {
+      width: 90vw;
+  }
+  
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .profile-image {
+      margin-bottom: 2rem;
+      border: 8px solid #A8DCD9;
+  }
+
+  .profile-card {
+      padding: 2rem 3rem;
+      width: 100vw;
+      border: none;
+      display: block;
+  }
+
+  .profile-card-body {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .profile-card {
+      padding: 2rem;
+      width: 90vw;
+      border: none;
+      display: block;
+  }
+
+  .profile-card-body {
+    padding-left: 0;
+  }
+}

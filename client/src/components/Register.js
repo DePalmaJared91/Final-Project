@@ -57,7 +57,7 @@ class Register extends Component {
 						alt="Salon Icon"
 						src={logo}
 						/>{' '}
-						<h1>bonjour</h1>
+						<h1>sign in</h1>
 
 						<form noValidate onSubmit={this.onSubmit}>
 							

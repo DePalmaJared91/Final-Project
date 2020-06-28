@@ -40,7 +40,16 @@ const UserSchema = new Schema({
 	bio: {
 		type: String
 	},
-	social_links: {
+	website_URL: {
+		type: String
+	},
+	twitter_username: {
+		type: String
+	},
+	instagram_username: {
+		type: String
+	},
+	shop_URL: {
 		type: String
 	}
 })
