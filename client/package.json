@@ -5,6 +5,7 @@
 	"proxy": "http://localhost:5000",
 	"dependencies": {
 		"axios": "^0.18.0",
+		"dotenv": "^8.2.0",
 		"jwt-decode": "^2.2.0",
 		"react": "^16.6.3",
 		"react-bootstrap": "^1.0.1",
