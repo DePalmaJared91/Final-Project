@@ -32,7 +32,7 @@ class LoginForm extends Component {
 
 		login(user).then((res) => {
 			if (res) {
-				this.props.history.push(`/studio`);
+				this.props.history.push(`/gallery`);
 			}
 		});
 	}

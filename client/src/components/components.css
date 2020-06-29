@@ -378,7 +378,7 @@ a:hover {
   font-size: calc(1vh + 14px);
   color: #fff;
   line-height: 1;
-  padding: 18px 18px 12px 18px;
+  padding: 16px;
   border-bottom: 5px solid #C6D930;
 }
 
@@ -451,7 +451,8 @@ a:hover {
   flex-grow: 1;
 }
 
-#sign-up-button {
+#sign-up-button,
+#upload-project-button {
   background-color: #566271 ;
   border: none !important;
   font-size: 2vh;

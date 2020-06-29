@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStore, faHome } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import Button from 'react-bootstrap/Button';
-
+import { Link } from 'react-router-dom';
 
 
 class Profile extends Component {
@@ -99,11 +99,12 @@ class Profile extends Component {
                             Edit Profile
                             </Button>
                             
+                            <Link to="/upload">
                             <Button className="upload-project-button"
                             variant="primary">
                             Upload a Project
                             </Button>
-                            
+                            </Link>
 
 
                         </div>

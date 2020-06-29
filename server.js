@@ -2,6 +2,7 @@
 var express = require('express')
 const path = require('path');
 var cors = require('cors')
+require('colors-cli/toxic')
 var bodyParser = require('body-parser')
 var app = express()
 const mongoose = require('mongoose')

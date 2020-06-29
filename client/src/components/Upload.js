@@ -12,7 +12,6 @@ class Upload extends Component {
                 <Navbar />
                 <UploadProjectForm />
                 <Footer />
-            
             </div>
         );
     }

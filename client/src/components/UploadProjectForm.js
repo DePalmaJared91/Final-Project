@@ -6,6 +6,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 // import logo from '/../../assets/images/salon-icon-white.svg';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
 class UploadProjectForm extends Component {
     
@@ -69,7 +70,7 @@ class UploadProjectForm extends Component {
             <div className="component">
                 <Jumbotron fluid className="jumbotron" >
                     <div className="vertical-center">
-                    <div className="page page-title">add to your gallery</div>
+                    <div className="page-title">add to your gallery</div>
                         <Form.Group>
 
                             <Form.Control
@@ -109,7 +110,7 @@ class UploadProjectForm extends Component {
                             <Form.Control
                                 onChange={this.handleChange("projectLink")}
                                 // value={this.state.email}
-                                id="project-link-input" type="text" placeholder="URL" />
+                                id="project-link-input" type="text" placeholder="project URL" />
                             <Form.Control
                                 onChange={this.handleChange("projectTags")}
                                 // value={this.state.username}
@@ -130,15 +131,17 @@ class UploadProjectForm extends Component {
                             </div>
 
                             <div className="buttons">
-                            <Button 
-                                onClick={this.uploadProject}
-                                id="upload-project-button">Upload Project</Button>{' '}
-                            </div>
+                            
+                                <Button 
+                                    onClick={this.uploadProject}
+                                    id="upload-project-button">Upload Project</Button>{' '}
+                                </div>
+                                
                             <div className="text-links">
-                            <a href="/">
-                                <p>back to your studio</p>
-                            </a>
-                        </div>
+                                <Link to="/studio">
+                                    <p>return to your studio</p>
+                                </Link>
+                            </div>
                         </Form.Group>
                         </div>                    
                 </Jumbotron>
