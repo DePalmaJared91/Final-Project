@@ -33,7 +33,7 @@ class UploadProjectForm extends Component {
         this.setState({ [name]: event.target.value })
     };
 
-    // grab data when sign up button is pressed to send to backend
+    // grab data when upload up button is pressed to send to backend
     uploadProject = event => {
         event.preventDefault();
         const { projectTitle, projectImage, projectCategory, projectDescription, projectMedium, projectTags, projectYear, projectLink, projectWIP } = this.state

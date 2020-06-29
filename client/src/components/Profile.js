@@ -44,14 +44,14 @@ class Profile extends Component {
                     className="profile-card">
                         
                         <Card.Img
-                            class="profile-image"
+                            className="profile-image"
                             src="https://thevelvetonion.files.wordpress.com/2012/02/noelfielding_painting.jpg?w=350&h=200&crop=1"
                             alt={this.state.user_name}
                         >
                         </Card.Img>
                         
                         <Card.Body
-                        class="profile-card-body"
+                        className="profile-card-body"
                         >
 
                             <h2>{this.state.user_name}</h2>

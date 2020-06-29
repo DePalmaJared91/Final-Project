@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-// import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-// import NavDropdown from 'react-bootstrap/NavDropdown';
 import './components.css';
 import logo from '../assets/images/salon-wordmark-white.svg';
 
