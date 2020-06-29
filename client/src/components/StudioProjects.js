@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import jwt_decode from 'jwt-decode';
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 
 
 class StudioProjects extends Component {
@@ -30,7 +30,7 @@ class StudioProjects extends Component {
 		return (
 			<div>
 				<div className="section-title">
-				Your Gallery
+				{this.state.user_name}'s Gallery
 				</div>
 
 				<div className="text-center">

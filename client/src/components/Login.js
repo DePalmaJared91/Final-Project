@@ -6,10 +6,6 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Header from './Header';
 import Footer from "./Footer.js";
 
-
-
-
-
 class LoginForm extends Component {
 	constructor() {
 		super();

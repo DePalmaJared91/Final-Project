@@ -117,6 +117,7 @@ a:hover {
   font-family: "St Ryde Light Italic";
   color: #566271;
   width: 70vw;
+  max-width: 30rem;
 }
 
 .form-control,
@@ -191,6 +192,11 @@ a:hover {
   max-height: calc(.5 * 3);
   line-height: 1;
   margin-right: 15px;
+  padding-left: 0 !important;
+}
+
+.navbar-active {
+  opacity: 100%;
 }
 
 .search-input-field {

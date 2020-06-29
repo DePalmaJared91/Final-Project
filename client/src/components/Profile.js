@@ -37,7 +37,7 @@ class Profile extends Component {
 				<div className="profile-section">
 				
                     <div className="section-title">
-                        Your Profile
+                        {this.state.user_name}'s Profile
                     </div>
 
                     <Card
@@ -54,11 +54,11 @@ class Profile extends Component {
                         class="profile-card-body"
                         >
 
-                        <h2>{this.state.user_name}</h2>
-                        <h3>London</h3>
-                        <h4>Studied fine art at Croydon University.  Has exhibited artworks in the Royal Albert Hall, the Saatchi Gallery and The Tate Liverpool, among others. Paintings are visceral and animated, worked on in bursts of energetic vigour, drawing on surrealism, dada and neo-expressionism.</h4>
+                            <h2>{this.state.user_name}</h2>
+                            <h3>London</h3>
+                            <h4>Studied fine art at Croydon University.  Has exhibited artworks in the Royal Albert Hall, the Saatchi Gallery and The Tate Liverpool, among others. Paintings are visceral and animated, worked on in bursts of energetic vigour, drawing on surrealism, dada and neo-expressionism.</h4>
 
-                        <div className="flex-div">
+                            <div className="flex-div">
 
                             <a
                             className="profile-link-icon"
@@ -111,7 +111,7 @@ class Profile extends Component {
                         
                         </Card.Body>
 
-                        </Card>
+                    </Card>
 
 				</div>
 		)

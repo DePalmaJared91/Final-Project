@@ -1,11 +1,13 @@
-import React, { Component } from 'react'
-import { Link, withRouter } from 'react-router-dom'
-import Logo from '../assets/images/salon-wordmark-white.svg'
-import Button from 'react-bootstrap/Button';
+import React, { Component } from 'react';
+import { Link, withRouter } from 'react-router-dom';
+import Logo from '../assets/images/salon-wordmark-white.svg';
+// import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { NavLink } from 'react-router-dom';
+
 
 
 
@@ -43,14 +45,18 @@ class Navbar extends Component {
 							<ul className="navbar-nav">
 							
 								<li className="nav-item">
-									<Link to="/studio" className="nav-link">
+									<NavLink to="/studio"
+									className="nav-link"
+									activeClassName="navbar-active">
 										Your Studio
-									</Link>
+									</NavLink>
 								</li>
 								<li className="nav-item">
-									<Link to="/gallery" className="nav-link">
+									<NavLink to="/gallery"
+									className="nav-link"
+									activeClassName="navbar-active">
 										Browse Gallery
-									</Link>
+									</NavLink>
 								</li>
 								<li className="nav-item">
 									<a href="/"

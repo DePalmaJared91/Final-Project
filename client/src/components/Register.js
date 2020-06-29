@@ -29,11 +29,11 @@
 		e.preventDefault();
 
 		const newUser = {
-		first_name: this.state.first_name,
-		last_name: this.state.last_name,
-		email: this.state.email,
-		user_name: this.state.user_name,
-		password: this.state.password,
+			first_name: this.state.first_name,
+			last_name: this.state.last_name,
+			email: this.state.email,
+			user_name: this.state.user_name,
+			password: this.state.password,
 		};
 
 		register(newUser)
@@ -48,84 +48,91 @@
 			return (
 				<div className="page">
 					<Header />
+					
 					<Jumbotron fluid className="jumbotron">
-					<div className="vertical-center">
-					<img alt="Salon Icon" src={logo} /> <h1>sign up</h1>
-					<form noValidate onSubmit={this.onSubmit}>
-					<div className="form-group">
-						<input
-						type="text"
-						className="form-control"
-						name="first_name"
-						placeholder="first name"
-						value={this.state.first_name}
-						onChange={this.onChange}
-						/>
-					</div>
 
-					<div className="form-group">
-						<input
-						type="text"
-						className="form-control"
-						name="last_name"
-						placeholder="last name"
-						value={this.state.last_name}
-						onChange={this.onChange}
-						/>
-					</div>
+						<div className="vertical-center">
+						<img alt="Salon Icon" src={logo} /> <h1>sign up</h1>
+						
+						<form noValidate onSubmit={this.onSubmit}>
+						<div className="form-group">
+							<input
+							type="text"
+							className="form-control"
+							name="first_name"
+							placeholder="first name"
+							value={this.state.first_name}
+							onChange={this.onChange}
+							/>
+						</div>
 
-					<div className="form-group">
-						<input
-						type="email"
-						className="form-control"
-						name="email"
-						placeholder="email"
-						value={this.state.email}
-						onChange={this.onChange}
-						/>
-					</div>
+						<div className="form-group">
+							<input
+							type="text"
+							className="form-control"
+							name="last_name"
+							placeholder="last name"
+							value={this.state.last_name}
+							onChange={this.onChange}
+							/>
+						</div>
 
-					<div className="form-group">
-						<input
-						type="user_name"
-						className="form-control"
-						name="user_name"
-						placeholder="username"
-						value={this.state.user_name}
-						onChange={this.onChange}
-						/>
-					</div>
+						<div className="form-group">
+							<input
+							type="email"
+							className="form-control"
+							name="email"
+							placeholder="email"
+							value={this.state.email}
+							onChange={this.onChange}
+							/>
+						</div>
 
-					<div className="form-group">
-						<input
-						type="password"
-						className="form-control"
-						name="password"
-						placeholder="password"
-						value={this.state.password}
-						onChange={this.onChange}
-						/>
-					</div>
+						<div className="form-group">
+							<input
+							type="user_name"
+							className="form-control"
+							name="user_name"
+							placeholder="username"
+							value={this.state.user_name}
+							onChange={this.onChange}
+							/>
+						</div>
 
-					<button
-						id="sign-up-button"
-						type="submit"
-						className="btn btn-lg btn-primary btn-block"
-					>
-						Sign Up
-					</button>
-					</form>
-					<div className="text-links">
-					<a href="/">
-						<p>return to log in page</p>
-					</a>
-					</div>
-					</div>
+						<div className="form-group">
+							<input
+							type="password"
+							className="form-control"
+							name="password"
+							placeholder="password"
+							value={this.state.password}
+							onChange={this.onChange}
+							/>
+						</div>
+
+						<button
+							id="sign-up-button"
+							type="submit"
+							className="btn btn-lg btn-primary btn-block"
+						>
+							Sign Up
+						</button>
+						</form>
+						
+						<div className="text-links">
+							<a href="/">
+								<p>return to log in page</p>
+							</a>
+							</div>
+						
+						</div>
+					
 					</Jumbotron>
 
 					<Footer />
+				
 				</div>
 			);
-		}}
+		}};
 
 	export default Register;

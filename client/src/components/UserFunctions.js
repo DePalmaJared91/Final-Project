@@ -7,12 +7,13 @@ export const register = newUser => {
       last_name: newUser.last_name,
       email: newUser.email,
       user_name: newUser.user_name,
-      password: newUser.password
+      password: newUser.password,
     })
     .then(response => {
-      console.log('Sign up successful! Log in to continue.')
+      console.log('Sign up successful! Log in to continue.');
     })
-}
+    .catch(err => console.log(err));
+};
 
 export const login = user => {
   return axios
