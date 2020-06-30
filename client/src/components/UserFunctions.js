@@ -33,10 +33,9 @@ export const login = user => {
 export const getProfile = user => {
   return axios
     .get('users/studio', {
-      //headers: { Authorization: ` ${this.getToken()}` }
+      // headers: { Authorization: ` ${this.getToken()}` }
     })
     .then(response => {
-      console.log(response)
       return response.data
     })
     .catch(err => {
