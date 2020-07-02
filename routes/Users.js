@@ -1,10 +1,9 @@
 	
-const express = require('express')
-const users = express.Router()
-const cors = require('cors')
-const jwt = require('jsonwebtoken')
-const bcrypt = require('bcrypt')
-
+const express = require('express');
+const users = express.Router();
+const cors = require('cors');
+const jwt = require('jsonwebtoken');
+const bcrypt = require('bcrypt');
 const User = require('../models/User')
 users.use(cors())
 
@@ -17,6 +16,7 @@ users.post('/register', (req, res) => {
 		last_name: req.body.last_name,
 		user_name: req.body.user_name, 
 		email: req.body.email,
+		user_name: req.body.user_name,
 		password: req.body.password,
 		created: today
 	}
@@ -77,7 +77,7 @@ users.post('/login', (req, res) => {
 		})
 })
 
-users.get('/profile', (req, res) => {
+users.get('/studio', (req, res) => {
 	var decoded = jwt.verify(req.headers['authorization'], process.env.SECRET_KEY)
 
 	User.findOne({

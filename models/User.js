@@ -4,14 +4,18 @@ const Schema = mongoose.Schema
 // Create Schema
 const UserSchema = new Schema({
 	first_name: {
-		type: String
+		type: String,
+		required: true
 	},
 	last_name: {
-		type: String
+		type: String,
+		required: true
 	},
 	user_name: {
 		type: String,
-		required: true
+		required: true,
+		min: 4,
+		max: 20
 	},
 	email: {
 		type: String,
@@ -34,10 +38,18 @@ const UserSchema = new Schema({
 	bio: {
 		type: String
 	},
-	social_links: {
+	website_URL: {
 		type: String
 	},
-	
+	twitter_username: {
+		type: String
+	},
+	instagram_username: {
+		type: String
+	},
+	shop_URL: {
+		type: String
+	}
 })
 
 module.exports = User = mongoose.model('users', UserSchema)

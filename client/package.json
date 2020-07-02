@@ -5,18 +5,20 @@
 	"proxy": "http://localhost:5000",
 	"dependencies": {
 		"axios": "^0.18.0",
+		"dotenv": "^8.2.0",
 		"jwt-decode": "^2.2.0",
 		"react": "^16.6.3",
 		"react-bootstrap": "^1.0.1",
 		"react-dom": "^16.6.3",
 		"react-router-dom": "^4.3.1",
-		"react-scripts": "^3.4.1"
+		"react-scripts": "3.4.1"
 	},
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test --env=jsdom",
-		"eject": "react-scripts eject"
+		"eject": "react-scripts eject",
+		"dev": "nodemon server.js"
 	},
 	"browserslist": [
 		">0.2%",

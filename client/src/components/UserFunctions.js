@@ -5,14 +5,15 @@ export const register = newUser => {
     .post('users/register', {
       first_name: newUser.first_name,
       last_name: newUser.last_name,
-      user_name: newUser.user_name,
       email: newUser.email,
-      password: newUser.password
+      user_name: newUser.user_name,
+      password: newUser.password,
     })
     .then(response => {
-      console.log('Registered')
+      console.log('Sign up successful! Log in to continue.');
     })
-}
+    .catch(err => console.log(err));
+};
 
 export const login = user => {
   return axios
@@ -31,11 +32,10 @@ export const login = user => {
 
 export const getProfile = user => {
   return axios
-    .get('users/profile', {
-      //headers: { Authorization: ` ${this.getToken()}` }
+    .get('users/studio', {
+      // headers: { Authorization: ` ${this.getToken()}` }
     })
     .then(response => {
-      console.log(response)
       return response.data
     })
     .catch(err => {
