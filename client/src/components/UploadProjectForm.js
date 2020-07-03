@@ -50,11 +50,11 @@ class UploadProjectForm extends Component {
             projectWIP: projectWIP,
         };
         console.log(user);
-        fetch("/upload", {
+        fetch("studio", {
             method: "POST",
             headers: {
-                Accept: "application/json",
-                dataType: "application/json"
+                // "Accept": "application/json",
+                "Content-Type": "application/json",
             },
             body: JSON.stringify(user)
         })

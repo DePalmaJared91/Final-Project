@@ -14,21 +14,21 @@ projects.use(cors())
 process.env.SECRET_KEY = 'secret'
 
 projects.post('/studio', (req, res) => {
-	var decoded = jwt.verify(req.headers['authorization'], process.env.SECRET_KEY)
+	console.log(req.body)
+	
+	// var decoded = jwt.verify(req.headers['authorization'], process.env.SECRET_KEY)
+	const projectData = {
+		projectTitle: req.body.projectTitle,
+		projectImage: req.body.projectImage,
+		projectCategory: req.body.projectCategory,
+		projectDescription: req.body.projectDescription,
+		projectMedium: req.body.projectMedium,
+		projectTags: req.body.projectTags,
+		projectLink: req.body.projectLink,
+		projectWIP: req.body.projectWIP,
+		//created: today
 
-	User.findOne({
-		_id: decoded._id
-	})
-		.then(user => {
-			if (user) {
-				res.json(user)
-			} else {
-				res.send('User does not exist')
-			}
-		})
-		.catch(err => {
-			res.send('error: ' + err)
-		})
+	}
 })
 
 // projects.get('/studio', (req, res) => {
@@ -48,3 +48,4 @@ projects.post('/studio', (req, res) => {
 // 			res.send('error: ' + err)
 // 		})
 // })
+module.exports = projects
