@@ -33,7 +33,9 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 
 // use routes from /routes
 var Users = require('./routes/Users')
+var Projects = require('./routes/Projects')
 app.use('/users', Users)
+app.use('/', Projects)
 
 // listen on the port
 app.listen(PORT, () => {

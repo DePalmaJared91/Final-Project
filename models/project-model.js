@@ -10,7 +10,6 @@ const projectSchema = new mongoose.Schema ({
     },
     projectImage: {
         type: String,
-        required: true
     },
     projectCategory: {
         type: String,
@@ -30,7 +29,6 @@ const projectSchema = new mongoose.Schema ({
     projectYear: {
         contentType: Number,
         type: isInteger,
-        required: true,
     },
     projectLink: {
         contentType: String
@@ -50,4 +48,4 @@ const projectSchema = new mongoose.Schema ({
     }
 });
 
-module.exports = mongoose.model("Project", projectSchema)
+module.exports = mongoose.model('projects', projectSchema)
