@@ -6,22 +6,18 @@ const { ObjectId } = mongoose.Schema;
 const projectSchema = new mongoose.Schema ({
     projectTitle: {
         type: String,
-        required: true,
     },
     projectImage: {
         type: String,
     },
     projectCategory: {
         type: String,
-        required: true
     },
     projectDescription: {
         type: String,
-        required: true
     },
     projectMedium: {
         type: String,
-        required: true
     },
     projectTags: {
         contentType: String

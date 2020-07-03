@@ -34,7 +34,7 @@ class UploadProjectForm extends Component {
     uploadProject = event => {
         event.preventDefault();
         const { projectTitle, projectImage, projectCategory, projectDescription, projectMedium, projectTags, projectYear, projectLink, projectWIP } = this.state
-        const user = {
+        const project = {
             projectTitle: projectTitle,
             projectImage: projectImage,
             projectCategory: projectCategory,
@@ -46,19 +46,14 @@ class UploadProjectForm extends Component {
             projectWIP: projectWIP,
 
         };
-        console.log(user);
-        fetch("studio", {
+        console.log(project);
+        fetch("/upload", {
             method: "POST",
             headers: {
-<<<<<<< HEAD
-                Accept: "application/json",
-                "Content-Type": "application/json"
-=======
                 // "Accept": "application/json",
                 "Content-Type": "application/json",
->>>>>>> meredithsbranch
             },
-            body: JSON.stringify(user)
+            body: JSON.stringify(project)
         })
         .then(response => {
             return response.json()

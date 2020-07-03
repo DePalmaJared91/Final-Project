@@ -13,7 +13,7 @@ projects.use(cors())
 
 process.env.SECRET_KEY = 'secret'
 
-projects.post('/studio', (req, res) => {
+projects.post('/upload', (req, res) => {
 	console.log(req.body)
 	
 	// var decoded = jwt.verify(req.headers['authorization'], process.env.SECRET_KEY)
