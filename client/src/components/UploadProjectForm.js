@@ -47,11 +47,16 @@ class UploadProjectForm extends Component {
 
         };
         console.log(user);
-        fetch("/upload", {
+        fetch("studio", {
             method: "POST",
             headers: {
+<<<<<<< HEAD
                 Accept: "application/json",
                 "Content-Type": "application/json"
+=======
+                // "Accept": "application/json",
+                "Content-Type": "application/json",
+>>>>>>> meredithsbranch
             },
             body: JSON.stringify(user)
         })
