@@ -1,53 +1,61 @@
 import React, { Component } from 'react';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
 import './components.css';
 import Jumbotron from 'react-bootstrap/Jumbotron';
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import logo from '/../../assets/images/salon-icon-white.svg';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 
-class UploadProjectForm extends Component {
+class EditProfile extends Component {
     
+
     constructor() {
         super()
         // initial state
         this.state = {
-            projectTitle: "",
-            projectImage: "",
-            projectYear: "",
-            projectCategory: "",
-            projectDescription: "",
-            projectMedium: "",
-            projectTags: "",
-            projectWorkInProgress: false,
-            projectLink: "",
-            error: ""
+            first_name: "",
+            last_name: "",
+            user_name: "",
+            email: "",
+            password: "",
+            profile_picture: "",
+            location: "",
+            bio: "",
+            website_URL: "",
+            twitter_handle: "",
+            instagram_handle: "",
+            shop_URL: ""
         }
     };
 
     // record values of input fields
     handleChange = (name) => (event) => {
         // array syntax -- will dynamically pick up values for all fields
-        this.setState({ [name]: event.target.value })
+        this.setState({ [name] : event.target.value })
     };
 
     // grab data when upload up button is pressed to send to backend
-    uploadProject = event => {
+    editProfile = event => {
         event.preventDefault();
-        const { projectTitle, projectImage, projectCategory, projectDescription, projectMedium, projectTags, projectYear, projectLink, projectWIP } = this.state
-        const user = {
-            projectTitle: projectTitle,
-            projectImage: projectImage,
-            projectCategory: projectCategory,
-            projectDescription: projectDescription,
-            projectMedium: projectMedium,
-            projectTags: projectTags,
-            projectYear: projectYear,
-            projectLink: projectLink,
-            projectWIP: projectWIP,
-
+        const { first_name, last_name, user_name, email, password, profile_picture, location, bio, website_URL, instagram_handle, twitter_handle, shop_URL } = this.state
+        const project = {
+            first_name: first_name,
+            last_name: last_name,
+            user_name: user_name,
+            email: email,
+            password: password,
+            profile_picture: profile_picture,
+            location: location,
+            bio: bio,
+            website_URL : website_URL,
+            twitter_handle,
+            instagram_handle,
+            shop_URL
         };
-        console.log(user);
-        fetch("/upload", {
+        console.log(project);
+        fetch("/editprofile", {
             method: "POST",
             headers: {
                 Accept: "application/json",
@@ -58,7 +66,7 @@ class UploadProjectForm extends Component {
         .then(response => {
             return response.json()
         })
-        .catch(err => console.log(err));
+        .catch(err => console.log(err))
     };
 
     render() {
@@ -67,11 +75,11 @@ class UploadProjectForm extends Component {
             <div className="component">
                 <Jumbotron fluid className="jumbotron" >
                     <div className="vertical-center">
-                    <div className="page-title">add to your gallery</div>
+                    <div className="page-title">edit profile</div>
                         <Form.Group>
 
                             <Form.Control
-                                onChange={this.handleChange("projectTitle")}
+                                onChange={this.handleChange("username")}
                                 // value={this.state.firstName}
                                 id="project-title-input" type="text" placeholder="title" />
                             
@@ -124,7 +132,7 @@ class UploadProjectForm extends Component {
                                     <option>completed</option>
                                     <option>work in progress</option>
                                 </Form.Control>
-  
+
                             </div>
 
                             <div className="buttons">
@@ -147,4 +155,4 @@ class UploadProjectForm extends Component {
     }
 }
 
-export default UploadProjectForm;
+export default EditProfile;
