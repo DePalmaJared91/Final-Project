@@ -41,10 +41,10 @@ const UserSchema = new Schema({
 	website_URL: {
 		type: String
 	},
-	twitter_username: {
+	twitter_handle: {
 		type: String
 	},
-	instagram_username: {
+	instagram_handle: {
 		type: String
 	},
 	shop_URL: {

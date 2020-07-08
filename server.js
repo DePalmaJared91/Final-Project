@@ -4,7 +4,7 @@ const path = require('path');
 var cors = require('cors');
 var bodyParser = require('body-parser');
 var app = express();
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 var PORT = process.env.PORT || 5000
 // invoke config method for dotenv
 require('dotenv').config();
